@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="main.css">
+        
+    </head>
+    <body>
+	    <div id="com"></div>
+	    <label for="value-ctrl">Set brightness value</label>
+			<input type="range" value="0" min="0" max="255" id="value-ctrl"/>
+			<br>
+	    <label for="period-ctrl">Pulse period (ms)</label>
+	    <input type="range" value="5000" min="1" max="60000" id="period-ctrl"/>
+	    <button id="strobe-btn">Pulse</button>
+	    <br>
+	    <button id="calibration-btn">Calibration</button>
+	    <br>
+			<label for="steps-ctrl">Steps</label>
+			<select id="steps-ctrl">
+			</select>
+			<label for="steps-duration-ctrl">Step duration</label>
+			<input type="range" value="1000" min="200" max="10000" id="steps-duration-ctrl"/>
+			<span id="steps-duration-label"></span><span>ms</span><br>
+			<button id="sequence-btn">Start sequence</button>
+			<br>
+			<div id="keyboard">
+			</div>
+	    <script src="main.js"></script>
+    </body>
+</html>
